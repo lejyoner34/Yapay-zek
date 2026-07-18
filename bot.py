@@ -14,7 +14,8 @@ if not GEMINI_API_KEY:
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+modelmodel = genai.GenerativeModel('gemini-1.5-flash-latest')
+
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
